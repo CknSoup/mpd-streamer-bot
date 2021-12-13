@@ -83,7 +83,7 @@ class MPD_Streamer(commands.Cog):
         """
         await ctx.send(self._get_current_song())
 
-    @commands.command()
+    @commands.command(name='next', aliases=['skip'])
     async def next(self, ctx):
         """Skips to the next song
 
